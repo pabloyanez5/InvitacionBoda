@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: 'Minion Variable Concept', serif;
+    background-color: #D3D3D3;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.wedding-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.name {
+    font-family: 'Alex Brush', cursive;
+    color: #323B60;
+    font-size: 12vw; /* Tamaño dinámico basado en el ancho de la pantalla */
+    margin: 20px 0;
+    text-align: center;
+}
+
+.title-main {
+    font-family: 'Minion Variable Concept', serif;
+    color: #666666;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.play-icon {
+    font-size: 36px;
+    color: #666666;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.play-icon:hover {
+    color: #323B60;
+}
+
+.special-day {
+    font-family: 'Alex Brush', cursive;
+    color: #323B60;
+    font-size: 28px;
+}
+
+.message {
+    font-family: 'Minion Variable Concept', serif;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+.accompany {
+    font-family: 'Minion Variable Concept', serif;
+    color: #666666;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.date {
+    font-family: 'Alex Brush', cursive;
+    color: #323B60;
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.countdown-item {
+    background-color: #323B60;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Minion Variable Concept', serif;
+    font-size: 18px;
+    min-width: 60px;
+}
+
+.save-the-date {
+    font-family: 'Alex Brush', cursive;
+    color: #323B60;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.calendar img {
+    max-width: 60%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.rings-icon img {
+    margin-top: 20px;
+    width: 50px;
+    height: auto;
+}
+
+.confirmation form {
+    margin: 20px 0;
+}
+
+.confirmation input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.confirmation button {
+    background-color: #323B60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Minion Variable Concept', serif;
+}
+
+.confirmation button:hover {
+    background-color: #666666;
+}
+
+@media (max-width: 600px) {
+    .name {
+        font-size: 36px;
+    }
+
+    .title-main,
+    .date {
+        font-size: 18px;
+    }
+
+    .countdown-item {
+        font-size: 14px;
+        min-width: 50px;
+    }
+}
