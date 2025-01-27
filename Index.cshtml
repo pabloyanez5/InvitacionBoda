@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda</title>
+    <link rel="stylesheet" href="~/css/site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Minion+Variable+Concept:opsz,wght@12..72,400;12..72,700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+</head>
+<body>
+    <div class="wedding-container">
+        <!-- Imagen principal -->
+        <div class="wedding-photo">
+            <img src="~/images/wedding.jpg" alt="Foto de Boda">
+        </div>
+
+        <!-- Nombres de Fer y Galo -->
+        <div class="names-bar">
+            <h2 class="name">Fer & Galo</h2>
+        </div>
+
+        <!-- "Nos casamos" -->
+        <h1 class="title-main">¡NOS CASAMOS!</h1>
+
+        <!-- Ícono Play -->
+        <div class="music-player">
+            <div class="play-icon" onclick="toggleWeddingSong()">▶</div>
+            <audio id="wedding-song" src="~/audio/wedding_song.mp3"></audio>
+        </div>
+
+        <!-- Llegó el gran día -->
+        <h2 class="special-day">Llegó el gran día</h2>
+
+        <!-- Mensaje especial -->
+        <p class="message">
+            Nos escogimos el uno al otro para amarnos por el resto de nuestras vidas.<br>
+            Deseamos profundamente compartir esta felicidad contigo.
+        </p>
+
+        <!-- Acompáñanos -->
+        <h2 class="accompany">ACOMPÁÑANOS</h2>
+
+        <!-- Fecha -->
+        <p class="date">Sábado 07 de Junio del 2025</p>
+
+        <!-- Contador de días restantes -->
+        <div class="countdown">
+            <div class="countdown-item"><span id="days"></span><div>DÍAS</div></div>
+            <div class="countdown-item"><span id="hours"></span><div>HORAS</div></div>
+            <div class="countdown-item"><span id="minutes"></span><div>MINUTOS</div></div>
+            <div class="countdown-item"><span id="seconds"></span><div>SEGUNDOS</div></div>
+        </div>
+
+        <!-- Save the date -->
+        <h2 class="save-the-date">¡Save The Date!</h2>
+
+        <!-- Calendario -->
+        <div class="calendar">
+            <img src="~/images/CALENDARIO.png" alt="Calendario de boda">
+        </div>
+
+        <!-- Icono de anillos -->
+        <div class="rings-icon">
+            <img src="~/images/anillo.png" alt="Anillos de Boda">
+        </div>
+
+        <!-- Confirmación de asistencia -->
+        <<div class="confirmation">
+            <h2>Confirma tu asistencia</h2>
+            <p>Presiona el botón para enviarnos tu confirmación por WhatsApp.</p>
+            <a href="https://wa.me/+593998913740?text=Confirmo mi asistencia a la boda. ¡Nos vemos pronto!"
+               target="_blank">
+                <button>Confirmar asistencia</button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let isPlaying = false;
+        function toggleWeddingSong() {
+            const audio = document.getElementById("wedding-song");
+            const playIcon = document.querySelector(".play-icon");
+            if (isPlaying) {
+                audio.pause();
+                playIcon.textContent = "▶";
+            } else {
+                audio.play();
+                playIcon.textContent = "⏸";
+            }
+            isPlaying = !isPlaying;
+        }
+
+        function countdown() {
+            const weddingDate = moment("2025-06-07");
+            const now = moment();
+            const duration = moment.duration(weddingDate.diff(now));
+
+            document.getElementById("days").textContent = Math.floor(duration.asDays());
+            document.getElementById("hours").textContent = duration.hours();
+            document.getElementById("minutes").textContent = duration.minutes();
+            document.getElementById("seconds").textContent = duration.seconds();
+        }
+
+        setInterval(countdown, 1000);
+
+
+    </script>
+    
+</body>
+</html>
