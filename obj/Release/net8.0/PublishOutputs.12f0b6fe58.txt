@@ -1,7 +1,0 @@
-D:\proyectos\BODAAAA\InvitacionDeBoda\InvitacionDeBoda\obj\Release\net8.0\PubTmp\Out\InvitacionDeBoda.exe
-D:\proyectos\BODAAAA\InvitacionDeBoda\InvitacionDeBoda\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
-D:\proyectos\BODAAAA\InvitacionDeBoda\InvitacionDeBoda\obj\Release\net8.0\PubTmp\Out\appsettings.json
-D:\proyectos\BODAAAA\InvitacionDeBoda\InvitacionDeBoda\obj\Release\net8.0\PubTmp\Out\InvitacionDeBoda.dll
-D:\proyectos\BODAAAA\InvitacionDeBoda\InvitacionDeBoda\obj\Release\net8.0\PubTmp\Out\InvitacionDeBoda.deps.json
-D:\proyectos\BODAAAA\InvitacionDeBoda\InvitacionDeBoda\obj\Release\net8.0\PubTmp\Out\InvitacionDeBoda.runtimeconfig.json
-D:\proyectos\BODAAAA\InvitacionDeBoda\InvitacionDeBoda\obj\Release\net8.0\PubTmp\Out\InvitacionDeBoda.pdb
