@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Confirmar Asistencia";
+}
+
+<div class="text-center">
+    <h1>Confirma tu asistencia</h1>
+    <form method="post" action="/Invitacion/Confirmacion">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Tu Nombre:</label>
+            <input type="text" name="nombre" id="nombre" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <label for="invitados" class="form-label">Número de Invitados:</label>
+            <input type="number" name="invitados" id="invitados" class="form-control" min="1" required />
+        </div>
+        <button type="submit" class="btn btn-success">Enviar Confirmación</button>
+    </form>
+</div>

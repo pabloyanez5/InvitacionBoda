@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+    font-family: 'Minion Variable Concept', serif;
+    background-color: #FFFFFF !important; /* Fondo blanco */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.wedding-container {
+    padding: 20px;
+}
+
+.confirmation form {
+    margin-top: 20px;
+}
+
+.confirmation input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px; /* Limitar el ancho máximo para mayor legibilidad */
+    box-sizing: border-box;
+}
+
+/* Estilos para los campos de nombre y apellido */
+.confirmation .names-fields {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Estilos del botón de confirmación */
+.confirmation button {
+    background-color: #323B60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Minion Variable Concept', serif;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.confirmation h2 {
+    color: #323B60; /* Color para el título de confirmación */
+}
+
+.confirmation p {
+    color: #666666; /* Color para el párrafo */
+}
+
+.wedding-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.name {
+    font-family: 'Alex Brush', cursive;
+    color: #323B60;
+    font-size: 12vw;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.title-main {
+    font-family: 'Minion Variable Concept', serif;
+    color: #666666;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.play-icon {
+    font-size: 36px;
+    color: #666666;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+    .play-icon:hover {
+        color: #323B60;
+    }
+
+.special-day {
+    font-family: 'Alex Brush', cursive;
+    color: #323B60;
+    font-size: 28px;
+}
+
+.message {
+    font-family: 'Minion Variable Concept', serif;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+.accompany {
+    font-family: 'Minion Variable Concept', serif;
+    color: #666666;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.date {
+    font-family: 'Alex Brush', cursive;
+    color: #323B60;
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.countdown-item {
+    background-color: #323B60;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Minion Variable Concept', serif;
+    font-size: 18px;
+    min-width: 60px;
+}
+
+.save-the-date {
+    font-family: 'Alex Brush', cursive;
+    color: #323B60;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.calendar img {
+    max-width: 60%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.rings-icon img {
+    margin-top: 20px;
+    width: 50px;
+    height: auto;
+}
+
+/* Confirmación de asistencia */
+.confirmation {
+    margin-top: 30px;
+}
+
+/* Estilos de los botones de confirmación */
+.confirmation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Hace que los botones se acomoden si no caben en una fila */
+    margin-top: 20px;
+}
+
+    .confirmation-buttons a {
+        text-decoration: none;
+        width: 100%;
+        max-width: 350px; /* Máximo ancho de los botones */
+    }
+
+    .confirmation-buttons button {
+        background-color: #323B60;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        cursor: pointer;
+        font-family: 'Minion Variable Concept', serif;
+        font-size: 16px;
+        border-radius: 5px;
+        width: 100%; /* Los botones tomarán todo el ancho disponible en pantallas pequeñas */
+        box-sizing: border-box; /* Incluye el padding dentro del ancho total del botón */
+        transition: background-color 0.3s ease;
+    }
+
+        .confirmation-buttons button:hover {
+            background-color: #666666;
+        }
+
+@media (max-width: 600px) {
+    .name {
+        font-size: 36px;
+    }
+
+    .title-main,
+    .date {
+        font-size: 18px;
+    }
+
+    .countdown-item {
+        font-size: 14px;
+        min-width: 50px;
+    }
+
+    .confirmation .names-fields {
+        flex-direction: column; /* Los campos se apilan verticalmente en pantallas pequeñas */
+    }
+
+        .confirmation .names-fields input {
+            width: 100%; /* Los campos ocupan el 100% del ancho disponible */
+        }
+
+    .confirmation button {
+        font-size: 18px; /* Aumentar tamaño de fuente para mejor legibilidad */
+        padding: 15px; /* Ajustar padding */
+    }
+
+    .confirmation-buttons {
+        flex-direction: column; /* Cambia los botones de fila a columna */
+        gap: 15px; /* Espacio mayor entre los botones */
+    }
+
+        .confirmation-buttons button {
+            font-size: 18px; /* Aumenta el tamaño de la fuente para una mejor legibilidad */
+            padding: 15px; /* Ajuste del padding para mejorar la proporción en pantallas pequeñas */
+        }
+}
+
+/* Mensaje de fecha máxima de confirmación */
+.confirmation .confirmation-date {
+    font-family: 'Minion Variable Concept', serif;
+    color: #666666;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+/* Mensaje de evento solo para adultos */
+.adults-only {
+    font-size: 16px;
+    color: #f74343;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
